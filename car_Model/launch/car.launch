@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+	<node pkg="car_Model" type="car_Model_node" name="car_Model_node" output="screen">
+	</node>
+
+	<node pkg="rviz" type="rviz" name="rviz" args="-d $(find car_Model)/launch/car.rviz" required="true">
+	</node>
+
+</launch>
